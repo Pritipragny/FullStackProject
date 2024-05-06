@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Song Page</title>
+<style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        </style>
+</head>
+<body>
+    <form action="/addsongs" method="post">
+    <h2>Add Song</h2>
+    
+        <label for="songName">Song Name:</label><br>
+        <input type="text" id="songName" name="name"><br><br>
+
+        <label for="artist">Artist:</label><br>
+        <input type="text" id="artist" name="artist"><br><br>
+
+        <label for="generic">Generic:</label><br>
+        <input type="text" id="generic" name="generic"><br><br>
+        
+        <label for="link">Link:</label><br>
+        <input type="url" id="link" name="link"><br><br>
+        <input type="submit" value="Add Song">
+</form>
+</body>
+</html>
